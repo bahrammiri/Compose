@@ -9,14 +9,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
+
 @Composable
-fun NumberScreen(numberViewModel: NumberViewModel) {
-rrrrrrrrrrrrrr
-    \\\\\
+fun BaseScreen(numberViewModel: NumberViewModel) {
 
+    NumberScreen(
+        onClick = { numberViewModel.generateNumber() },
+        number = numberViewModel.number.value.toString()
+    )
 
+}
 
-
+@Composable
+fun NumberScreen(
+    onClick: () -> Unit,
+    number: String,
+) {
 
     Column(
         modifier = Modifier.fillMaxWidth(),
@@ -24,10 +32,9 @@ rrrrrrrrrrrrrr
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(onClick = {
-
-            numberViewModel.generateNumber()
+            onClick.invoke()
         }) {
-            Text(numberViewModel.number.value.toString())
+            Text(number)
         }
 
     }

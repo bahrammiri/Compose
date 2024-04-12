@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.testcompose.ui.theme.TestComposeTheme
 
 class MainActivity : ComponentActivity() {
-
+//one
     val numberViewModel by viewModels<NumberViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
             TestComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    NumberScreen(numberViewModel)
+                    BaseScreen(numberViewModel)
                 }
             }
         }
