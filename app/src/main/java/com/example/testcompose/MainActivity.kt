@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.testcompose.ui.theme.TestComposeTheme
 
 class MainActivity : ComponentActivity() {
-//one
+//two
     val numberViewModel by viewModels<NumberViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
