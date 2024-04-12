@@ -18,7 +18,6 @@ fun NumberScreen(numberViewModel: NumberViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(onClick = {
-
             numberViewModel.generateNumber()
         }) {
             Text(numberViewModel.number.value.toString())
