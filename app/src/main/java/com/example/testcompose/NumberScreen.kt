@@ -11,6 +11,12 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun NumberScreen(numberViewModel: NumberViewModel) {
+rrrrrrrrrrrrrr
+    \\\\\
+
+
+
+
 
     Column(
         modifier = Modifier.fillMaxWidth(),
