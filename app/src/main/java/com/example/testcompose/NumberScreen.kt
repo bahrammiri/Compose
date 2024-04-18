@@ -12,7 +12,6 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun BaseScreen(numberViewModel: NumberViewModel) {
-
     NumberScreen(
         onClick = { numberViewModel.generateNumber() },
         number = numberViewModel.number.value.toString()
@@ -25,7 +24,6 @@ fun NumberScreen(
     onClick: () -> Unit,
     number: String,
 ) {
-
     Column(
         modifier = Modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.Center,
