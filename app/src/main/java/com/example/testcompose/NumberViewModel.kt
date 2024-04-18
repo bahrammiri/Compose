@@ -8,7 +8,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class NumberViewModel : ViewModel() {
-
+//two
     var number = mutableIntStateOf(1)
 
     fun generateNumber() {
