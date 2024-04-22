@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 
 class NumberViewModel : ViewModel() {
 
+
     var number = mutableIntStateOf(1)
 
     fun generateNumber() {
